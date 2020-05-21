@@ -53,7 +53,7 @@ int main(int argc, char **argv)
       _mm256_store_si256(pVector, vXorred);                   // store back
     }
 
-    oFile.write(reinterpret_cast<char *>(buffer), bytesRead);
+    oFile.write(buffer, bytesRead);
     totalBytes += bytesRead;
   }
 
